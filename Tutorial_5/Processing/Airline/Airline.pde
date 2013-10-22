@@ -52,7 +52,7 @@ void setup(){
     airline[4].spannweite = airline[3].spannweite;
     airline[4].laenge = airline[3].laenge;
     
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 1; i++) {
       airline[i].zeichne();
 //      airline[i].printInfo();
 //      System.out.println(airline[i].getCapacity() + " Passagiere/Jahr");

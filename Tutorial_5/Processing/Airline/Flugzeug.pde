@@ -26,14 +26,16 @@ public class Flugzeug {
   public void zeichne(){
     stroke(255, 255, 0);
     strokeWeight(6);
-    line(x, Math.round(y-spannweite/2), Math.round(x+laenge/2), y);
-    line(x, y, Math.round(x+laenge), y);
+    line(x, Math.round(y-spannweite/2), Math.round(x+laenge/2), y);     line(x, y, Math.round(x+laenge), y);
     line(x, Math.round(y+spannweite/2), Math.round(x+laenge/2), y);
     text(bezeichnung, Math.round(x+laenge), y-10);
   }
   
   public void fliegen(){
-    float speed = (float)geschwindigkeit/200;
-    x = x+(int)speed;
+    if(x<width-laenge && x<reichweite){
+      float speed = (float)geschwindigkeit/200;
+      x = x+(int)speed;
+      reichweite = reichweite-x;
+    }
   }
 }
