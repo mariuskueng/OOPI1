@@ -24,9 +24,12 @@ public class Flugzeug {
   }
   
   public void zeichne(){
-    fill(255, 255, 0);
-    rect(x, y, sitze/10, sitze/10);
-    text(bezeichnung, x, y);
+    stroke(255, 255, 0);
+    strokeWeight(6);
+    line(x, Math.round(y-spannweite/2), Math.round(x+laenge/2), y);
+    line(x, y, Math.round(x+laenge), y);
+    line(x, Math.round(y+spannweite/2), Math.round(x+laenge/2), y);
+    text(bezeichnung, Math.round(x+laenge), y-10);
   }
   
   public void fliegen(){

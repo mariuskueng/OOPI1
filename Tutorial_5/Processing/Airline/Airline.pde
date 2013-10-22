@@ -1,7 +1,7 @@
 Flugzeug [] airline = new Flugzeug[5];
 
 void setup(){
-  int width = 1500;
+  int width = 1200;
   int height = 400;
   size(width, height);
   background(0,0,255);
@@ -54,9 +54,9 @@ void setup(){
     
     for (int i = 0; i < 5; i++) {
       airline[i].zeichne();
-      airline[i].printInfo();
-      System.out.println(airline[i].getCapacity() + " Passagiere/Jahr");
-      System.out.println("Dauer: " + airline[i].getTime(6330.87) + " h");
+//      airline[i].printInfo();
+//      System.out.println(airline[i].getCapacity() + " Passagiere/Jahr");
+//      System.out.println("Dauer: " + airline[i].getTime(6330.87) + " h");
     }
 }
 
