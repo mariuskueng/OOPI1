@@ -1,4 +1,4 @@
-package w38;
+
 
 import java.util.Scanner;
 import java.lang.Math;
