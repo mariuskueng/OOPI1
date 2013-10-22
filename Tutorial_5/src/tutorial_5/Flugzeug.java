@@ -11,7 +11,6 @@ public class Flugzeug {
 	public void printInfo(){
 		System.out.println(bezeichnung + ": " + sitze + " Sitze "+
 				geschwindigkeit + " km/h / " + reichweite + " km");
-		System.out.println(getCapacity() + " Passagiere/Jahr");
 	}
 	
 	public double getTime(double distanz){
