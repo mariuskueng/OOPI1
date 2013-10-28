@@ -3,11 +3,8 @@ public class Ferienort {
 
 	public static void main(String[] args) {
 		
-		Hotel edelweiss = new Hotel();
-		edelweiss.stockwerke = 4;
-		edelweiss.zimmerProStockwerk = 10;
+		Hotel edelweiss = new Hotel(4, 10);
 		
-
 		for (int i = 0; i < 5; i++) {
 			if(edelweiss.einchecken()){
 				System.out.println("Einchecken erfolgreich!");
@@ -21,9 +18,7 @@ public class Ferienort {
 		edelweiss.printInfo();
 		
 		
-		Hotel astoria = new Hotel();
-		astoria.stockwerke = 10;
-		astoria.zimmerProStockwerk = 20;
+		Hotel astoria = new Hotel(10, 20);
 		
 		for (int i = 0; i < 4; i++) {
 			astoria.einchecken();
@@ -35,9 +30,7 @@ public class Ferienort {
 		astoria.printInfo();
 		
 		
-		Hotel alpenblick = new Hotel();
-		alpenblick.stockwerke = 1;
-		alpenblick.zimmerProStockwerk = 30;
+		Hotel alpenblick = new Hotel(1, 30);
 		
 		for (int i = 0; i < 30; i++) {
 			alpenblick.einchecken();
