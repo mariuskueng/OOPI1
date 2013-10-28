@@ -6,21 +6,25 @@ public class Flugzeug {
 	private double geschwindigkeit = 0;
 	private double reichweite = 0;
 	
+	public static int counter;
+	
 	
 	public Flugzeug(){
 		// Allgemeiner Konstruktor für ein leeres Flugzeug
+		counter++;
+		idNummer = counter;
 	    bezeichnung = "Flugzeug";
-	    idNummer = 1;
 	    sitze= 100;
 	    geschwindigkeit =100;
 	    reichweite =100;
 	}
 	
-	public Flugzeug(String bezeichnung, int idNummer, int sitze,
+	public Flugzeug(String bezeichnung, int sitze,
             double geschwindigkeit, double reichweite){
 		// Konstruktor für direkte Parameterübergabe
+		counter++;
+		this.idNummer = counter;
 		this.bezeichnung = bezeichnung;
-		this.idNummer = idNummer;
 		this.sitze= sitze;
 		this.geschwindigkeit =geschwindigkeit;
 		this.reichweite =reichweite;
@@ -28,8 +32,9 @@ public class Flugzeug {
 	
 	public Flugzeug(Flugzeug f){
 		//Kopier-Konstruktor
+		counter++;
+		this.idNummer = counter;
 	    this.bezeichnung = f.getBezeichnung();
-	    this.idNummer = f.getIdNummer();
 	    this.sitze= f.getSitze();
 	    this.geschwindigkeit = f.getGeschwindigkeit();
 	    this.reichweite = f.getReichweite();
@@ -44,7 +49,7 @@ public class Flugzeug {
 	}
 	
 	public void printInfo(){
-		System.out.println(bezeichnung + ": " + sitze + " Sitze "+
+		System.out.println(bezeichnung + "("+this.idNummer+"): " + sitze + " Sitze "+
 				geschwindigkeit + " km/h / " + reichweite + " km");
 	}
 	
@@ -67,10 +72,6 @@ public class Flugzeug {
 
 	public int getIdNummer() {
 		return idNummer;
-	}
-
-	public void setIdNummer(int idNummer) {
-		this.idNummer = idNummer;
 	}
 
 	public int getSitze() {
@@ -110,6 +111,10 @@ public class Flugzeug {
 		else{
 			this.reichweite = reichweite;
 		}
+	}
+	
+	public static int getCounter(){
+		return counter;
 	}
 	
 }
