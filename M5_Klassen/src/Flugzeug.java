@@ -8,6 +8,7 @@ public class Flugzeug {
 	
 	
 	public Flugzeug(){
+		// Allgemeiner Konstruktor für ein leeres Flugzeug
 	    bezeichnung = "Flugzeug";
 	    idNummer = 1;
 	    sitze= 100;
@@ -17,6 +18,7 @@ public class Flugzeug {
 	
 	public Flugzeug(String bezeichnung, int idNummer, int sitze,
             double geschwindigkeit, double reichweite){
+		// Konstruktor für direkte Parameterübergabe
 		this.bezeichnung = bezeichnung;
 		this.idNummer = idNummer;
 		this.sitze= sitze;
@@ -25,6 +27,7 @@ public class Flugzeug {
 	}
 	
 	public Flugzeug(Flugzeug f){
+		//Kopier-Konstruktor
 	    this.bezeichnung = f.getBezeichnung();
 	    this.idNummer = f.getIdNummer();
 	    this.sitze= f.getSitze();
@@ -33,7 +36,8 @@ public class Flugzeug {
 	}
 	
 	public boolean equals(Flugzeug f){
-		if(this.getSitze() == f.getSitze()){
+		//Ist ein Flugzeug vergleichbar nach gewissen Kriterien
+		if(this.getSitze() == f.getSitze() && this.geschwindigkeit == f.geschwindigkeit && this.reichweite == f.reichweite){
 			return true;
 		}
 		return false;
