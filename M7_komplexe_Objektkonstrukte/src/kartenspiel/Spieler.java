@@ -12,10 +12,15 @@ public class Spieler {
 	public void addKarte(Karte k){
 		boolean set = false;
 		int i = 0;
-		while(i<5 && set == false){ //i<5 == Gršsse der Hand, ist Karte gesetzt
+		
+		/*Wenn eine Spielerkarte leer ist, wird dort eine Karte hinzgefŸgt und die while-Schlaufe mit true abgebrochen.
+		 * Danach wird um 1 erhšht um zur nŠchsten Spielerkarte zu gehen. Es wird immer geprŸft ob eine Spielerkarte
+		 * bereits vorhanden ist.
+		 * */
+		while(i<karten.length && set == false){ //i<5 == Gršsse der Hand, ist Karte gesetzt
 			if(karten[i] == null){
+				karten[i] = k;
 				set = true;
-				karten[i] = k;	
 			}
 			i++;
 		}
