@@ -5,7 +5,7 @@ public class Spiel {
 	private Stapel stapel;			// Zur Vewaltung des Kartenstapels
 	
 	public static void main(String[] args){
-		new Spiel(2);
+		Spiel spiel1 = new Spiel(2);
 	}
 	
 	public Spiel(int anzahlSpieler){
@@ -16,6 +16,12 @@ public class Spiel {
 		this.stapel = new Stapel();
 		this.stapel.mischen();
 		this.austeilen();
+		this.auswerten();
+	}
+	
+	public Spiel(Spiel s){
+		this.spieler = s.spieler;
+		this.stapel = s.stapel;
 		this.auswerten();
 	}
 	
