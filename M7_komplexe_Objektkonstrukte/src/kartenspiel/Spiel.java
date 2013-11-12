@@ -24,7 +24,7 @@ public class Spiel {
 			for (int j = 0; j < 5; j++) {
 				this.spieler[i].addKarte(this.stapel.getNextCard());
 			}
-			
+			this.spieler[i].sort();
 		}
 	}
 	
