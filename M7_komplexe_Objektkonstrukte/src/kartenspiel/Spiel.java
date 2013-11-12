@@ -6,6 +6,7 @@ public class Spiel {
 	
 	public static void main(String[] args){
 		Spiel spiel1 = new Spiel(2);
+		Spiel spiel2 = new Spiel(100);
 	}
 	
 	public Spiel(int anzahlSpieler){

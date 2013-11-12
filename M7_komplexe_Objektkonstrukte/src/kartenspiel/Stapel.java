@@ -28,7 +28,7 @@ public class Stapel {
 	}
 	
 	public Karte getNextCard(){
-		if(pos<52){
+		if(pos<51){
 			pos++;
 		}
 		else{
