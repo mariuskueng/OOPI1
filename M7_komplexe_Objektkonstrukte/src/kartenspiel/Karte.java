@@ -14,16 +14,16 @@ public class Karte {
 	public void print(){
 		switch(this.color){
 			case 0:
-				System.out.print("Pik");
+				System.out.print("Karo");
 				break;
 			case 1:
-				System.out.print("Herz");
-				break;
-			case 2:
 				System.out.print("Kreuz");
 				break;
+			case 2:
+				System.out.print("Herz");
+				break;
 			case 3:
-				System.out.print("Karo");
+				System.out.print("Pik");
 				break;
 		}
 		System.out.print(" / ");
