@@ -20,29 +20,29 @@ public class Alte_Pruefung {
 	     for(int i=0; i<10;i++){
 	    		System.out.println("Im Jahr " + (jahr+i+1) + " sind Sie " + (alter));
 	    	}
-	     
+
 	     while(anzahl>0){
 	    	 System.out.println("Im Jahr " + (jahr-anzahl) + " sind Sie " + (alter-anzahl));
 	    	 anzahl--;
 	     }
 		*/
-		
+
 		int[] fibonacci = new int[8];
 		fibonacci[0] = 0;
 		fibonacci[1] = 1;
-		
+
 		for(int i=0;i<fibonacci.length;i++){
 			if(i!=0 && i!= 1){
 				fibonacci[i] = fibonacci[i-1]+fibonacci[i-2];
 			}
 		}
-		
+
 		for(int i=0;i<fibonacci.length;i++){
 			for(int x=0; x<fibonacci[i];x++){
 				System.out.print("*");
 			}
 			System.out.println();
-			
+
 		}
 		int summe = 0;
 		for(int i=0;i<fibonacci.length;i++){
@@ -50,6 +50,6 @@ public class Alte_Pruefung {
 		}
 		summe = summe/fibonacci.length;
 		System.out.println(summe);
-		
+
 	}
 }

@@ -3,7 +3,7 @@
 public class Fluggesellschaft {
 
 	public static void main(String[] args){
-		
+
 		System.out.println(Flugzeug.getCounter());
 		Flugzeug [] airline = new Flugzeug[5];
 
@@ -28,7 +28,7 @@ public class Fluggesellschaft {
 		if (airline[3].equals(airline[4])){
 			System.out.println("Vergleichbare Flugzeuge");
 		}
-		
+
 		System.out.println(Flugzeug.getCounter());
 		  System.out.println(airline[0].getCounter());
 

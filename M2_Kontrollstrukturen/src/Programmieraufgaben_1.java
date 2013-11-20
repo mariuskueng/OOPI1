@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
 public class Programmieraufgaben_1 {
-	
+
 	static Scanner s = new Scanner(System.in);
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		int tag, monat;
-		
+
 		System.out.println("Bitte geben Sie den Tag ein:");
 		tag = s.nextInt();
 		System.out.println("Bitte geben Sie den Monat ein (Wert zwischen 1 und 12:");
 		monat = s.nextInt();
-		
+
 		// Testen Sie, ob der Monat ein mšglicher Monat ist
-		
+
 		switch (monat) {
 		case 1:
 			System.out.println("Winter");

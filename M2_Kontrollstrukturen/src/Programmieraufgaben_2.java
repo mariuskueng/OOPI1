@@ -3,20 +3,20 @@ import java.util.Scanner;
 public class Programmieraufgaben_2 {
 
 	static Scanner s = new Scanner(System.in);
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		System.out.println("Gehen (0)\nVelo (1)\nAuto (2)\nZug (3)");
 		System.out.println("Bitte geben Sie die gewünschte Fortbewegungsart ein:");
 
 		int fortbewegungsart = s.nextInt();
-		
+
 		int geschwindigkeit = 0;
-		
+
 		System.out.println("Bitte geben Sie die gewünschte Strecke (km) ein (Ganzzahl):");
 		int strecke = s.nextInt();
-		
+
 		switch (fortbewegungsart){
 		case 0:
 			geschwindigkeit = 5;
@@ -34,7 +34,7 @@ public class Programmieraufgaben_2 {
 			System.out.println("Falsche Eingabe!");
 			break;
 		}
-		
+
 		double fahrzeit = strecke / geschwindigkeit;
 		System.out.println("Ihre Fahrzeit ist: "+ fahrzeit);
 	}

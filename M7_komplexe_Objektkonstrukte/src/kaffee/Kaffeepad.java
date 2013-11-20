@@ -3,7 +3,7 @@ package kaffee;
 public class Kaffeepad {
 	private int dl;
 	private String typ;
-	
+
 	public int getDl() {
 		return dl;
 	}
