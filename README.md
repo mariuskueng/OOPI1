@@ -1,4 +1,4 @@
-OOPL1
+OOPI1
 =====
 
-Aufgaben aus OOPL1/EIPR (HS13)
+Aufgaben aus OOPI1/EIPR (HS13)
